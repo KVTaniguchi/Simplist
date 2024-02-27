@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C724EDFE2B83AC3000DE7A63 /* SimplistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EDFD2B83AC3000DE7A63 /* SimplistApp.swift */; };
-		C724EE002B83AC3000DE7A63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EDFF2B83AC3000DE7A63 /* ContentView.swift */; };
+		C724EE002B83AC3000DE7A63 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EDFF2B83AC3000DE7A63 /* ListView.swift */; };
 		C724EE022B83AC3000DE7A63 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE012B83AC3000DE7A63 /* Item.swift */; };
 		C724EE042B83AC3200DE7A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C724EE032B83AC3200DE7A63 /* Assets.xcassets */; };
 		C724EE072B83AC3200DE7A63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C724EE062B83AC3200DE7A63 /* Preview Assets.xcassets */; };
 		C724EE132B83AC3200DE7A63 /* SimplistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE122B83AC3200DE7A63 /* SimplistTests.swift */; };
 		C724EE1D2B83AC3200DE7A63 /* SimplistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */; };
 		C724EE1F2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */; };
+		C724EE2D2B83B24A00DE7A63 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE2C2B83B24A00DE7A63 /* Checklist.swift */; };
+		C724EE322B83B66700DE7A63 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE312B83B66700DE7A63 /* TabBarView.swift */; };
+		C724EE342B83C2E400DE7A63 /* ListOfChecklistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */; };
+		C724EE362B83CF7000DE7A63 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE352B83CF7000DE7A63 /* AddListView.swift */; };
+		C724EE382B83DC4500DE7A63 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE372B83DC4500DE7A63 /* AddItemView.swift */; };
+		C78F9DB12B883002008655E6 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F9DB02B883002008655E6 /* ListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,7 @@
 /* Begin PBXFileReference section */
 		C724EDFA2B83AC3000DE7A63 /* Simplist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simplist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C724EDFD2B83AC3000DE7A63 /* SimplistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistApp.swift; sourceTree = "<group>"; };
-		C724EDFF2B83AC3000DE7A63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C724EDFF2B83AC3000DE7A63 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		C724EE012B83AC3000DE7A63 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C724EE032B83AC3200DE7A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C724EE062B83AC3200DE7A63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +54,12 @@
 		C724EE182B83AC3200DE7A63 /* SimplistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITests.swift; sourceTree = "<group>"; };
 		C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C724EE2C2B83B24A00DE7A63 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		C724EE312B83B66700DE7A63 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfChecklistsView.swift; sourceTree = "<group>"; };
+		C724EE352B83CF7000DE7A63 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
+		C724EE372B83DC4500DE7A63 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		C78F9DB02B883002008655E6 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +110,19 @@
 		C724EDFC2B83AC3000DE7A63 /* Simplist */ = {
 			isa = PBXGroup;
 			children = (
+				C724EE2E2B83B26A00DE7A63 /* Item */,
+				C724EE2B2B83AE2F00DE7A63 /* List */,
 				C724EDFD2B83AC3000DE7A63 /* SimplistApp.swift */,
-				C724EDFF2B83AC3000DE7A63 /* ContentView.swift */,
-				C724EE012B83AC3000DE7A63 /* Item.swift */,
+				C724EDFF2B83AC3000DE7A63 /* ListView.swift */,
 				C724EE032B83AC3200DE7A63 /* Assets.xcassets */,
 				C724EE082B83AC3200DE7A63 /* Simplist.entitlements */,
 				C724EE092B83AC3200DE7A63 /* Info.plist */,
 				C724EE052B83AC3200DE7A63 /* Preview Content */,
+				C724EE312B83B66700DE7A63 /* TabBarView.swift */,
+				C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */,
+				C724EE352B83CF7000DE7A63 /* AddListView.swift */,
+				C724EE372B83DC4500DE7A63 /* AddItemView.swift */,
+				C78F9DB02B883002008655E6 /* ListRowView.swift */,
 			);
 			path = Simplist;
 			sourceTree = "<group>";
@@ -132,6 +150,22 @@
 				C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */,
 			);
 			path = SimplistUITests;
+			sourceTree = "<group>";
+		};
+		C724EE2B2B83AE2F00DE7A63 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C724EE2C2B83B24A00DE7A63 /* Checklist.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C724EE2E2B83B26A00DE7A63 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				C724EE012B83AC3000DE7A63 /* Item.swift */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C724EE002B83AC3000DE7A63 /* ContentView.swift in Sources */,
+				C724EE002B83AC3000DE7A63 /* ListView.swift in Sources */,
+				C724EE2D2B83B24A00DE7A63 /* Checklist.swift in Sources */,
+				C724EE342B83C2E400DE7A63 /* ListOfChecklistsView.swift in Sources */,
 				C724EE022B83AC3000DE7A63 /* Item.swift in Sources */,
+				C724EE322B83B66700DE7A63 /* TabBarView.swift in Sources */,
 				C724EDFE2B83AC3000DE7A63 /* SimplistApp.swift in Sources */,
+				C724EE362B83CF7000DE7A63 /* AddListView.swift in Sources */,
+				C724EE382B83DC4500DE7A63 /* AddItemView.swift in Sources */,
+				C78F9DB12B883002008655E6 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,8 +478,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +486,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taniguichi.Simplist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,8 +512,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +520,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taniguichi.Simplist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

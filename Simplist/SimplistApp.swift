@@ -10,8 +10,16 @@ import SwiftData
 
 @main
 struct SimplistApp: App {
+    var body: some Scene {
+        WindowGroup {
+            TabBarView()
+        }
+        .modelContainer(sharedModelContainer)
+    }
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
+            Checklist.self,
             Item.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
@@ -22,11 +30,4 @@ struct SimplistApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
-    }
 }
