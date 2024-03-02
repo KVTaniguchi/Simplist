@@ -22,10 +22,17 @@ struct SimplistApp: App {
             Checklist.self,
             Item.self,
         ])
+        let m = ModelConfiguration(
+            "SimplistAppModelConfig",
+            schema: schema,
+            isStoredInMemoryOnly: false,
+            allowsSave: true,
+            groupContainer: .identifier("group.simplist")
+        )
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(for: schema, configurations: [m])
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
