@@ -19,7 +19,7 @@ struct Simplist_WidgetAttributes: ActivityAttributes {
     var name: String
 }
 
-struct Simplist_WidgetLiveActivity: Widget {
+struct SimplistWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: Simplist_WidgetAttributes.self) { context in
             // Lock screen/banner UI goes here

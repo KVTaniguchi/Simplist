@@ -10,9 +10,9 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Simplist_WidgetBundle: WidgetBundle {
+struct SimplistWidgetBundle: WidgetBundle {
     var body: some Widget {
-        Simplist_Widget()
-        Simplist_WidgetLiveActivity()
+        SimplistWidget()
+        SimplistWidgetLiveActivity()
     }
 }
