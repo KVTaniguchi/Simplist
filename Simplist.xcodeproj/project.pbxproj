@@ -621,7 +621,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.taniguichi.Simplist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.Simplist;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.taniguchi.simplist;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.taniguchi.simplist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -657,7 +659,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.taniguichi.Simplist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.Simplist;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.taniguchi.simplist;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.taniguchi.simplist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -751,6 +755,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Simplist WidgetExtension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3B3FT42G96;
@@ -764,7 +769,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguichi.Simplist.Simplist-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguchi.Simplist.Simplist-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -780,6 +785,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Simplist WidgetExtension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3B3FT42G96;
@@ -793,7 +799,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguichi.Simplist.Simplist-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguchi.Simplist.Simplist-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;

@@ -16,6 +16,10 @@ struct SharedItem: Identifiable {
     let id: String
     let completed: Bool
     
+    var imageName: String {
+        completed ? "circle.circle.fill" : "circle"
+    }
+    
 }
 
 struct SimpleEntry: TimelineEntry {
@@ -35,12 +39,13 @@ struct SimplistIntent: AppIntent {
     
     init() {}
     
+    @MainActor
     func perform() async throws -> some IntentResult {
         let predicate = #Predicate<Item> { item in
-            item.name == modelId
+            item.uuid == modelId
         }
         
-        if let item = try? await SharedAppContainer.shared.container.mainContext.fetch(.init(predicate: predicate)).first {
+        if let item = try? SharedAppContainer.shared.container.mainContext.fetch(.init(predicate: predicate)).first {
             item.completed = true
         }
         
@@ -67,13 +72,9 @@ struct Provider: TimelineProvider {
             
             let items = (try? context.fetch(FetchDescriptor<Item>())) ?? []
             
-            print("getting timeline")
-            print(items)
+            let simpleItems = items.map { SharedItem(name: $0.name ?? "no name???", id: $0.uuid, completed: $0.completed) }
             
-            let simpleItems = items.map { SharedItem(name: $0.name ?? "", id: UUID().uuidString, completed: false) }
-            
-            entries.append(SimpleEntry(date: Date(), items: simpleItems.filter { $0.completed }))
-            entries.append(SimpleEntry(date: Date().addingTimeInterval(0.5), items: simpleItems.filter { !$0.completed }))
+            entries.append(SimpleEntry(date: Date(), items: simpleItems.filter { !$0.completed }))
             
             let timeline = Timeline(entries: entries, policy: .atEnd)
             
@@ -87,10 +88,16 @@ struct SimplistWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text(entry.items.first?.name ?? "")
-            Text(entry.items.last?.name ?? "")
+        VStack(alignment: .leading) {
+            ForEach(entry.items.prefix(3), id: \.id) { item in
+                Button(
+                    item.name,
+                    systemImage: item.imageName,
+                    intent: SimplistIntent(modelId: item.id)
+                )
+            }
         }
+        .transition(.push(from: .bottom))
     }
 }
 
@@ -99,11 +106,11 @@ struct SimplistWidget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            print(entry)
             return SimplistWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Simplist")
         .description("Simplist widget")
+        .contentMarginsDisabled()
     }
 }
