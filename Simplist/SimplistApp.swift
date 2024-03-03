@@ -12,7 +12,7 @@ import SwiftData
 struct SimplistApp: App {
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            ListView()
         }
         .modelContainer(SharedAppContainer.shared.container)
     }

@@ -22,49 +22,53 @@ struct ListView: View {
     var items: [Item]
     
     var notCompletedItems: [Item] {
-        items
-            .filter { $0.checklist?.order == 0 }
-            .filter { !$0.completed }
+        items.filter { !$0.completed }
     }
     
     var completedItems: [Item] {
-        items
-            .filter { $0.checklist?.order == 0 }
-            .filter { $0.completed }
+        items.filter { $0.completed }
     }
 
     var body: some View {
-        List {
-            Section {
-                ForEach(notCompletedItems) { item in
-                    ListRowView(item: item)
+        NavigationView {
+            List {
+                Section {
+                    ForEach(notCompletedItems) { item in
+                        ListRowView(item: item)
+                    }
+                    .onMove(perform: moveItem)
+                    .onDelete(perform: deleteItems)
+                    // add new button that just adds a new text
                 }
-                .onMove(perform: moveItem)
-                .onDelete(perform: deleteItems)
-            }
-            Section {
-                ForEach(completedItems) { item in
-                    ListRowView(item: item)
+                
+                if !completedItems.isEmpty {
+                    Section {
+                        ForEach(completedItems) { item in
+                            ListRowView(item: item)
+                        }
+                        .onMove(perform: moveItem)
+                        .onDelete(perform: deleteItems)
+                        Button("Delete all completed", role: .destructive) {
+                            deleteAllCompleted()
+                        }
+                    }
                 }
-                .onMove(perform: moveItem)
-                .onDelete(perform: deleteItems)
             }
-            
-        }
-        .sheet(isPresented: $isShowingAddList) {
-            AddListView(
-                isShowingAddListView: $isShowingAddList
-            )
-            .environment(\.modelContext, modelContext)
-        }
-        .sheet(isPresented: $isShowingAddItemView) {
-            AddItemView(checkList: lists.first, isShowingAddItemView: $isShowingAddItemView)
-                .presentationDetents([.fraction(0.15)])
-        }
-        .toolbar {
-            ToolbarItem {
-                Button(action: addItem) {
-                    Label("Add Item", systemImage: "plus")
+            .sheet(isPresented: $isShowingAddList) {
+                AddListView(
+                    isShowingAddListView: $isShowingAddList
+                )
+                .environment(\.modelContext, modelContext)
+            }
+            .sheet(isPresented: $isShowingAddItemView) {
+                AddItemView(checkList: lists.first, isShowingAddItemView: $isShowingAddItemView)
+                    .presentationDetents([.fraction(0.15)])
+            }
+            .toolbar {
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "plus")
+                    }
                 }
             }
         }
@@ -79,6 +83,14 @@ struct ListView: View {
             for index in offsets {
                 modelContext.delete(items[index])
             }
+        }
+    }
+    
+    private func deleteAllCompleted() {
+        let completedItems = self.completedItems
+        
+        for completedItem in completedItems {
+            modelContext.delete(completedItem)
         }
     }
     

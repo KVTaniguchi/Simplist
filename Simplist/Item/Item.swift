@@ -13,9 +13,10 @@ final public class Item {
     var timestamp: Date = Date()
     var name: String?
     var ordinal: Int?
-    var checklist: Checklist?
     var completed: Bool = false
     let uuid = UUID().uuidString
+    
+    var checklist: Checklist?
     
     public init() {}
 }
