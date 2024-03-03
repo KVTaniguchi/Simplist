@@ -93,6 +93,7 @@ struct SimplistWidgetEntryView : View {
                 .font(.headline)
                 .fontWeight(.semibold)
                 .foregroundColor(.primary)
+                .padding([.top, .bottom], 8)
             ForEach(entry.items.prefix(6), id: \.id) { item in
                 HStack {
                     Button(
