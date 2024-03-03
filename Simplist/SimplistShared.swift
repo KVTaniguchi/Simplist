@@ -88,14 +88,24 @@ struct SimplistWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack(alignment: .leading) {
-            ForEach(entry.items.prefix(3), id: \.id) { item in
-                Button(
-                    item.name,
-                    systemImage: item.imageName,
-                    intent: SimplistIntent(modelId: item.id)
-                )
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Simplist")
+                .font(.headline)
+                .fontWeight(.semibold)
+                .foregroundColor(.primary)
+            ForEach(entry.items.prefix(6), id: \.id) { item in
+                HStack {
+                    Button(
+                        item.name,
+                        systemImage: item.imageName,
+                        intent: SimplistIntent(modelId: item.id)
+                    )
+                    .buttonStyle(.automatic)
+                    Spacer()
+                }
+                
             }
+            Spacer()
         }
         .transition(.push(from: .bottom))
     }
@@ -111,6 +121,8 @@ struct SimplistWidget: Widget {
         }
         .configurationDisplayName("Simplist")
         .description("Simplist widget")
-        .contentMarginsDisabled()
+        .supportedFamilies([
+            .systemLarge
+        ])
     }
 }

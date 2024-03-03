@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import WidgetKit
 
 struct ListRowView: View {
     let item: Item
@@ -22,6 +22,7 @@ struct ListRowView: View {
             withAnimation {
                 item.completed.toggle()
                 animated.toggle()
+                WidgetCenter.shared.reloadAllTimelines()
             }
             
             try? item.modelContext?.save()

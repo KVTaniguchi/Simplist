@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct AddListView: View {
     @Environment(\.modelContext) private var modelContext
@@ -81,5 +82,7 @@ struct AddListView: View {
         try? newList.modelContext?.save()
         
         isShowingAddListView.toggle()
+        
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }

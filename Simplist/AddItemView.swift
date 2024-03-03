@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddItemView: View {
+    @Environment(\.modelContext) private var modelContext
     @State private var name = ""
     @FocusState private var isTextFieldFocused: Bool
     let checkList: Checklist?
@@ -22,10 +23,8 @@ struct AddItemView: View {
                 Spacer()
                 Button("Save") {
                     let newItem = Item()
-                    if let checklist = self.checkList {
-                        newItem.checklist = checklist
-                    }
                     newItem.name = self.name
+                    modelContext.insert(newItem)
                 
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         isShowingAddItemView = false

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct ListView: View {
     @Environment(\.modelContext) private var modelContext
@@ -84,6 +85,8 @@ struct ListView: View {
                 modelContext.delete(items[index])
             }
         }
+        
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
     private func deleteAllCompleted() {
@@ -102,8 +105,9 @@ struct ListView: View {
             if let item = items.first(where: { $0 == itemCopy }) {
                 item.ordinal = index
             }
-            
         }
+        
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
 
