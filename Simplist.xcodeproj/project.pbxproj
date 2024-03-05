@@ -16,7 +16,6 @@
 		C724EE1D2B83AC3200DE7A63 /* SimplistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */; };
 		C724EE1F2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */; };
 		C724EE2D2B83B24A00DE7A63 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE2C2B83B24A00DE7A63 /* Checklist.swift */; };
-		C724EE322B83B66700DE7A63 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE312B83B66700DE7A63 /* TabBarView.swift */; };
 		C724EE342B83C2E400DE7A63 /* ListOfChecklistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */; };
 		C724EE362B83CF7000DE7A63 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE352B83CF7000DE7A63 /* AddListView.swift */; };
 		C724EE382B83DC4500DE7A63 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE372B83DC4500DE7A63 /* AddItemView.swift */; };
@@ -90,7 +89,6 @@
 		C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITests.swift; sourceTree = "<group>"; };
 		C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C724EE2C2B83B24A00DE7A63 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
-		C724EE312B83B66700DE7A63 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfChecklistsView.swift; sourceTree = "<group>"; };
 		C724EE352B83CF7000DE7A63 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
 		C724EE372B83DC4500DE7A63 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
@@ -169,15 +167,14 @@
 		C724EDFC2B83AC3000DE7A63 /* Simplist */ = {
 			isa = PBXGroup;
 			children = (
+				C724EE082B83AC3200DE7A63 /* Simplist.entitlements */,
 				C724EE2E2B83B26A00DE7A63 /* Item */,
 				C724EE2B2B83AE2F00DE7A63 /* List */,
 				C724EDFD2B83AC3000DE7A63 /* SimplistApp.swift */,
 				C724EDFF2B83AC3000DE7A63 /* ListView.swift */,
 				C724EE032B83AC3200DE7A63 /* Assets.xcassets */,
-				C724EE082B83AC3200DE7A63 /* Simplist.entitlements */,
 				C724EE092B83AC3200DE7A63 /* Info.plist */,
 				C724EE052B83AC3200DE7A63 /* Preview Content */,
-				C724EE312B83B66700DE7A63 /* TabBarView.swift */,
 				C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */,
 				C724EE352B83CF7000DE7A63 /* AddListView.swift */,
 				C724EE372B83DC4500DE7A63 /* AddItemView.swift */,
@@ -417,7 +414,6 @@
 				C724EE342B83C2E400DE7A63 /* ListOfChecklistsView.swift in Sources */,
 				C724EE022B83AC3000DE7A63 /* Item.swift in Sources */,
 				C7F7562C2B93114600E3FA91 /* SimplistShared.swift in Sources */,
-				C724EE322B83B66700DE7A63 /* TabBarView.swift in Sources */,
 				C724EDFE2B83AC3000DE7A63 /* SimplistApp.swift in Sources */,
 				C7F756202B93029C00E3FA91 /* SharedAppContainer.swift in Sources */,
 				C724EE362B83CF7000DE7A63 /* AddListView.swift in Sources */,

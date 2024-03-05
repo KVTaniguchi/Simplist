@@ -72,7 +72,9 @@ struct Provider: TimelineProvider {
             
             let items = (try? context.fetch(FetchDescriptor<Item>())) ?? []
             
-            let simpleItems = items.map { SharedItem(name: $0.name ?? "no name???", id: $0.uuid, completed: $0.completed) }
+            let simpleItems = items
+                .sorted(by: { ($0.ordinal ?? 0) < ($1.ordinal ?? 0) })
+                .map { SharedItem(name: $0.name ?? "no name???", id: $0.uuid, completed: $0.completed) }
             
             entries.append(SimpleEntry(date: Date(), items: simpleItems.filter { !$0.completed }))
             
@@ -104,7 +106,6 @@ struct SimplistWidgetEntryView : View {
                     .buttonStyle(.automatic)
                     Spacer()
                 }
-                
             }
             Spacer()
         }
