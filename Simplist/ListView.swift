@@ -89,10 +89,10 @@ struct ListView: View {
     }
     
     private func moveItem(from source: IndexSet, to destination: Int) {
-        var itemsCopy = items
-        itemsCopy.move(fromOffsets: source, toOffset: destination)
+        var itemsMovable = notCompletedItems
+        itemsMovable.move(fromOffsets: source, toOffset: destination)
         
-        for (index, itemCopy) in itemsCopy.enumerated() {
+        for (index, itemCopy) in itemsMovable.enumerated() {
             if let item = items.first(where: { $0 == itemCopy }) {
                 item.ordinal = index
             }
