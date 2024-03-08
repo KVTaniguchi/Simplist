@@ -12,11 +12,6 @@ import WidgetKit
 struct ListView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var isShowingAddItemView: Bool = false
-    @State private var activelist: Checklist?
-    @State private var isShowingAddList: Bool = false
-    @Query(
-        sort: \Checklist.ordinal
-    ) var lists: [Checklist]
     @Query(
         sort: \Item.ordinal
     )
@@ -55,14 +50,8 @@ struct ListView: View {
                     }
                 }
             }
-            .sheet(isPresented: $isShowingAddList) {
-                AddListView(
-                    isShowingAddListView: $isShowingAddList
-                )
-                .environment(\.modelContext, modelContext)
-            }
             .sheet(isPresented: $isShowingAddItemView) {
-                AddItemView(checkList: lists.first, isShowingAddItemView: $isShowingAddItemView)
+                AddItemView(isShowingAddItemView: $isShowingAddItemView)
                     .presentationDetents([.fraction(0.15)])
             }
             .toolbar {
@@ -95,6 +84,8 @@ struct ListView: View {
         for completedItem in completedItems {
             modelContext.delete(completedItem)
         }
+        
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
     private func moveItem(from source: IndexSet, to destination: Int) {

@@ -19,6 +19,22 @@ struct Simplist_WidgetAttributes: ActivityAttributes {
     var name: String
 }
 
+//struct SimplistWidget: Widget {
+//    let kind: String = "Simplist_Widget"
+//
+//    var body: some WidgetConfiguration {
+//        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+//            return SimplistWidgetEntryView(entry: entry)
+//                .containerBackground(.fill.tertiary, for: .widget)
+//        }
+//        .configurationDisplayName("Simplist")
+//        .description("Simplist widget")
+//        .supportedFamilies([
+//            .systemLarge
+//        ])
+//    }
+//}
+
 struct SimplistWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: Simplist_WidgetAttributes.self) { context in

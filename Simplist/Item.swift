@@ -16,7 +16,5 @@ final public class Item {
     var completed: Bool = false
     let uuid = UUID().uuidString
     
-    var checklist: Checklist?
-    
     public init() {}
 }

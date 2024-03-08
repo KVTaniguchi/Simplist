@@ -15,9 +15,6 @@
 		C724EE132B83AC3200DE7A63 /* SimplistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE122B83AC3200DE7A63 /* SimplistTests.swift */; };
 		C724EE1D2B83AC3200DE7A63 /* SimplistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */; };
 		C724EE1F2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */; };
-		C724EE2D2B83B24A00DE7A63 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE2C2B83B24A00DE7A63 /* Checklist.swift */; };
-		C724EE342B83C2E400DE7A63 /* ListOfChecklistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */; };
-		C724EE362B83CF7000DE7A63 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE352B83CF7000DE7A63 /* AddListView.swift */; };
 		C724EE382B83DC4500DE7A63 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE372B83DC4500DE7A63 /* AddItemView.swift */; };
 		C78F9DB12B883002008655E6 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F9DB02B883002008655E6 /* ListRowView.swift */; };
 		C7F756022B91615100E3FA91 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F756012B91615100E3FA91 /* WidgetKit.framework */; };
@@ -27,13 +24,10 @@
 		C7F7560D2B91615500E3FA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F7560C2B91615500E3FA91 /* Assets.xcassets */; };
 		C7F756112B91615500E3FA91 /* Simplist WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C7F755FF2B91615100E3FA91 /* Simplist WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C7F7561B2B9166D700E3FA91 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE012B83AC3000DE7A63 /* Item.swift */; };
-		C7F7561C2B9166DA00E3FA91 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE2C2B83B24A00DE7A63 /* Checklist.swift */; };
 		C7F756202B93029C00E3FA91 /* SharedAppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7561F2B93029C00E3FA91 /* SharedAppContainer.swift */; };
 		C7F756212B9302A400E3FA91 /* SharedAppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7561F2B93029C00E3FA91 /* SharedAppContainer.swift */; };
-		C7F756252B9307AB00E3FA91 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F756242B9307AB00E3FA91 /* SimpleEntry.swift */; };
 		C7F7562C2B93114600E3FA91 /* SimplistShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7562B2B93114600E3FA91 /* SimplistShared.swift */; };
 		C7F7562D2B93114600E3FA91 /* SimplistShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7562B2B93114600E3FA91 /* SimplistShared.swift */; };
-		C7F7562E2B93162400E3FA91 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F756242B9307AB00E3FA91 /* SimpleEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +82,6 @@
 		C724EE182B83AC3200DE7A63 /* SimplistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITests.swift; sourceTree = "<group>"; };
 		C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C724EE2C2B83B24A00DE7A63 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
-		C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfChecklistsView.swift; sourceTree = "<group>"; };
-		C724EE352B83CF7000DE7A63 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
 		C724EE372B83DC4500DE7A63 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		C78F9DB02B883002008655E6 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		C7F755FF2B91615100E3FA91 /* Simplist WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simplist WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +93,6 @@
 		C7F7560E2B91615500E3FA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7F756122B91615500E3FA91 /* Simplist WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simplist WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		C7F7561F2B93029C00E3FA91 /* SharedAppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAppContainer.swift; sourceTree = "<group>"; };
-		C7F756242B9307AB00E3FA91 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
 		C7F7562B2B93114600E3FA91 /* SimplistShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistShared.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,20 +158,16 @@
 			isa = PBXGroup;
 			children = (
 				C724EE082B83AC3200DE7A63 /* Simplist.entitlements */,
-				C724EE2E2B83B26A00DE7A63 /* Item */,
-				C724EE2B2B83AE2F00DE7A63 /* List */,
 				C724EDFD2B83AC3000DE7A63 /* SimplistApp.swift */,
+				C724EE012B83AC3000DE7A63 /* Item.swift */,
 				C724EDFF2B83AC3000DE7A63 /* ListView.swift */,
-				C724EE032B83AC3200DE7A63 /* Assets.xcassets */,
-				C724EE092B83AC3200DE7A63 /* Info.plist */,
-				C724EE052B83AC3200DE7A63 /* Preview Content */,
-				C724EE332B83C2E400DE7A63 /* ListOfChecklistsView.swift */,
-				C724EE352B83CF7000DE7A63 /* AddListView.swift */,
 				C724EE372B83DC4500DE7A63 /* AddItemView.swift */,
 				C78F9DB02B883002008655E6 /* ListRowView.swift */,
 				C7F7561F2B93029C00E3FA91 /* SharedAppContainer.swift */,
 				C7F7562B2B93114600E3FA91 /* SimplistShared.swift */,
-				C7F756242B9307AB00E3FA91 /* SimpleEntry.swift */,
+				C724EE032B83AC3200DE7A63 /* Assets.xcassets */,
+				C724EE092B83AC3200DE7A63 /* Info.plist */,
+				C724EE052B83AC3200DE7A63 /* Preview Content */,
 			);
 			path = Simplist;
 			sourceTree = "<group>";
@@ -209,22 +195,6 @@
 				C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */,
 			);
 			path = SimplistUITests;
-			sourceTree = "<group>";
-		};
-		C724EE2B2B83AE2F00DE7A63 /* List */ = {
-			isa = PBXGroup;
-			children = (
-				C724EE2C2B83B24A00DE7A63 /* Checklist.swift */,
-			);
-			path = List;
-			sourceTree = "<group>";
-		};
-		C724EE2E2B83B26A00DE7A63 /* Item */ = {
-			isa = PBXGroup;
-			children = (
-				C724EE012B83AC3000DE7A63 /* Item.swift */,
-			);
-			path = Item;
 			sourceTree = "<group>";
 		};
 		C7F756002B91615100E3FA91 /* Frameworks */ = {
@@ -408,15 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F7562E2B93162400E3FA91 /* SimpleEntry.swift in Sources */,
 				C724EE002B83AC3000DE7A63 /* ListView.swift in Sources */,
-				C724EE2D2B83B24A00DE7A63 /* Checklist.swift in Sources */,
-				C724EE342B83C2E400DE7A63 /* ListOfChecklistsView.swift in Sources */,
 				C724EE022B83AC3000DE7A63 /* Item.swift in Sources */,
 				C7F7562C2B93114600E3FA91 /* SimplistShared.swift in Sources */,
 				C724EDFE2B83AC3000DE7A63 /* SimplistApp.swift in Sources */,
 				C7F756202B93029C00E3FA91 /* SharedAppContainer.swift in Sources */,
-				C724EE362B83CF7000DE7A63 /* AddListView.swift in Sources */,
 				C724EE382B83DC4500DE7A63 /* AddItemView.swift in Sources */,
 				C78F9DB12B883002008655E6 /* ListRowView.swift in Sources */,
 			);
@@ -443,13 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F756252B9307AB00E3FA91 /* SimpleEntry.swift in Sources */,
 				C7F756212B9302A400E3FA91 /* SharedAppContainer.swift in Sources */,
 				C7F7562D2B93114600E3FA91 /* SimplistShared.swift in Sources */,
 				C7F756072B91615100E3FA91 /* SimplistWidgetBundle.swift in Sources */,
 				C7F7561B2B9166D700E3FA91 /* Item.swift in Sources */,
 				C7F756092B91615100E3FA91 /* SimplistWidgetLiveActivity.swift in Sources */,
-				C7F7561C2B9166DA00E3FA91 /* Checklist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,9 +581,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.Simplist;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.taniguchi.simplist;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.taniguchi.simplist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.simplist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -655,9 +617,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.Simplist;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.taniguchi.simplist;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.taniguchi.simplist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniguchi.simplist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -765,7 +725,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguchi.Simplist.Simplist-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguchi.simplist.Simplist-WidgetExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -795,7 +755,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguchi.Simplist.Simplist-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taniguchi.simplist.Simplist-WidgetExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;

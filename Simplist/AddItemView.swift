@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct AddItemView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var name = ""
     @FocusState private var isTextFieldFocused: Bool
-    let checkList: Checklist?
     @Binding var isShowingAddItemView: Bool
     
     var body: some View {
@@ -25,6 +25,8 @@ struct AddItemView: View {
                     let newItem = Item()
                     newItem.name = self.name
                     modelContext.insert(newItem)
+                    
+                    WidgetCenter.shared.reloadAllTimelines()
                 
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         isShowingAddItemView = false

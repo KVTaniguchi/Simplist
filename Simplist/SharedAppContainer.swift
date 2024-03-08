@@ -15,7 +15,6 @@ final class SharedAppContainer {
     
     var container: ModelContainer = {
         let schema = Schema([
-            Checklist.self,
             Item.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)

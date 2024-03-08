@@ -13,6 +13,5 @@ import SwiftData
 struct SimplistWidgetBundle: WidgetBundle {
     var body: some Widget {
         SimplistWidget()
-        SimplistWidgetLiveActivity()
     }
 }
