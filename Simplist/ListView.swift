@@ -64,7 +64,7 @@ struct ListView: View {
         }
     }
 
-    private func addItem() {
+    private func addItem() { 
         isShowingAddItemView.toggle()
     }
 

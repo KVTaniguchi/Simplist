@@ -158,15 +158,15 @@
 			isa = PBXGroup;
 			children = (
 				C724EE082B83AC3200DE7A63 /* Simplist.entitlements */,
-				C724EDFD2B83AC3000DE7A63 /* SimplistApp.swift */,
-				C724EE012B83AC3000DE7A63 /* Item.swift */,
-				C724EDFF2B83AC3000DE7A63 /* ListView.swift */,
+				C724EE092B83AC3200DE7A63 /* Info.plist */,
 				C724EE372B83DC4500DE7A63 /* AddItemView.swift */,
+				C724EE012B83AC3000DE7A63 /* Item.swift */,
 				C78F9DB02B883002008655E6 /* ListRowView.swift */,
+				C724EDFF2B83AC3000DE7A63 /* ListView.swift */,
 				C7F7561F2B93029C00E3FA91 /* SharedAppContainer.swift */,
+				C724EDFD2B83AC3000DE7A63 /* SimplistApp.swift */,
 				C7F7562B2B93114600E3FA91 /* SimplistShared.swift */,
 				C724EE032B83AC3200DE7A63 /* Assets.xcassets */,
-				C724EE092B83AC3200DE7A63 /* Info.plist */,
 				C724EE052B83AC3200DE7A63 /* Preview Content */,
 			);
 			path = Simplist;

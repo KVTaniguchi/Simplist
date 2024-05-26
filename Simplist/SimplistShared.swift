@@ -19,7 +19,6 @@ struct SharedItem: Identifiable {
     var imageName: String {
         completed ? "circle.circle.fill" : "circle"
     }
-    
 }
 
 struct SimpleEntry: TimelineEntry {
@@ -64,7 +63,6 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
-        
         Task { @MainActor in
             var entries: [SimpleEntry] = []
             
