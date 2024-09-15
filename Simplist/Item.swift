@@ -14,7 +14,7 @@ final public class Item {
     var name: String?
     var ordinal: Int?
     var completed: Bool = false
-    let uuid = UUID().uuidString
+    var uuid = UUID().uuidString
     
     public init() {}
 }
