@@ -1,9 +1,3 @@
-//
-//  SimplistEntryView.swift
-//  Simplist
-//
-//  Created by Kevin Taniguchi on 3/2/24.
-//
 
 import Foundation
 import AppIntents
@@ -44,7 +38,7 @@ struct SimplistIntent: AppIntent {
             item.uuid == modelId
         }
         
-        if let item = try? SharedAppContainer.shared.container.mainContext.fetch(.init(predicate: predicate)).first {
+        if let item = try SharedAppContainer.shared.container.mainContext.fetch(.init(predicate: predicate)).first {
             item.completed = true
             try SharedAppContainer.shared.container.mainContext.save()
         }
