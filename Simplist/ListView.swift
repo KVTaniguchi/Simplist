@@ -34,7 +34,6 @@ struct ListView: View {
                     }
                     .onMove(perform: moveItem)
                     .onDelete(perform: deleteItems)
-                    // add new button that just adds a new text
                 }
                 
                 if !completedItems.isEmpty {

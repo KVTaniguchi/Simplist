@@ -46,6 +46,7 @@ struct SimplistIntent: AppIntent {
         
         if let item = try? SharedAppContainer.shared.container.mainContext.fetch(.init(predicate: predicate)).first {
             item.completed = true
+            try SharedAppContainer.shared.container.mainContext.save()
         }
         
         return .result()
