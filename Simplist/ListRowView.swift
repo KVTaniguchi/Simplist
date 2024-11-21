@@ -1,10 +1,3 @@
-//
-//  ListRowView.swift
-//  Simplist
-//
-//  Created by Kevin Taniguchi on 2/22/24.
-//
-
 import Foundation
 import SwiftUI
 import WidgetKit
