@@ -4,10 +4,10 @@ import WidgetKit
 
 struct ListView: View {
     @Environment(\.modelContext) private var modelContext
+    
     @State private var isShowingAddItemView: Bool = false
-    @Query(
-        sort: \Item.ordinal
-    )
+    
+    @Query(sort: \Item.ordinal)
     var items: [Item]
     
     var notCompletedItems: [Item] {
