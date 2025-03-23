@@ -135,6 +135,7 @@
 		C724EDF12B83AC2F00DE7A63 = {
 			isa = PBXGroup;
 			children = (
+				E341F78B2D90ABC900CE8520 /* ReadMe.md */,
 				C7F756122B91615500E3FA91 /* Simplist WidgetExtension.entitlements */,
 				C724EDFC2B83AC3000DE7A63 /* Simplist */,
 				C724EE112B83AC3200DE7A63 /* SimplistTests */,
@@ -170,7 +171,6 @@
 				C7F7562B2B93114600E3FA91 /* SimplistShared.swift */,
 				C724EE032B83AC3200DE7A63 /* Assets.xcassets */,
 				C724EE052B83AC3200DE7A63 /* Preview Content */,
-				E341F78B2D90ABC900CE8520 /* ReadMe.md */,
 			);
 			path = Simplist;
 			sourceTree = "<group>";
