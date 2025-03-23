@@ -28,6 +28,7 @@
 		C7F756212B9302A400E3FA91 /* SharedAppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7561F2B93029C00E3FA91 /* SharedAppContainer.swift */; };
 		C7F7562C2B93114600E3FA91 /* SimplistShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7562B2B93114600E3FA91 /* SimplistShared.swift */; };
 		C7F7562D2B93114600E3FA91 /* SimplistShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7562B2B93114600E3FA91 /* SimplistShared.swift */; };
+		E341F78C2D90ABC900CE8520 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = E341F78B2D90ABC900CE8520 /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		C7F756122B91615500E3FA91 /* Simplist WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simplist WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		C7F7561F2B93029C00E3FA91 /* SharedAppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAppContainer.swift; sourceTree = "<group>"; };
 		C7F7562B2B93114600E3FA91 /* SimplistShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistShared.swift; sourceTree = "<group>"; };
+		E341F78B2D90ABC900CE8520 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				C7F7562B2B93114600E3FA91 /* SimplistShared.swift */,
 				C724EE032B83AC3200DE7A63 /* Assets.xcassets */,
 				C724EE052B83AC3200DE7A63 /* Preview Content */,
+				E341F78B2D90ABC900CE8520 /* ReadMe.md */,
 			);
 			path = Simplist;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			files = (
 				C724EE072B83AC3200DE7A63 /* Preview Assets.xcassets in Resources */,
 				C724EE042B83AC3200DE7A63 /* Assets.xcassets in Resources */,
+				E341F78C2D90ABC900CE8520 /* ReadMe.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
