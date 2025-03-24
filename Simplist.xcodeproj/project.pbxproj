@@ -29,6 +29,7 @@
 		C7F7562D2B93114600E3FA91 /* SimplistShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7562B2B93114600E3FA91 /* SimplistShared.swift */; };
 		E341F78C2D90ABC900CE8520 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = E341F78B2D90ABC900CE8520 /* ReadMe.md */; };
 		E341F7932D91068900CE8520 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341F7912D91061E00CE8520 /* ItemTests.swift */; };
+		E341F7952D910C5800CE8520 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341F7942D910C5500CE8520 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		C7F7562B2B93114600E3FA91 /* SimplistShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistShared.swift; sourceTree = "<group>"; };
 		E341F78B2D90ABC900CE8520 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		E341F7912D91061E00CE8520 /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		E341F7942D910C5500CE8520 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		C724EDFC2B83AC3000DE7A63 /* Simplist */ = {
 			isa = PBXGroup;
 			children = (
+				E341F7942D910C5500CE8520 /* ListViewModel.swift */,
 				C724EE082B83AC3200DE7A63 /* Simplist.entitlements */,
 				C724EE092B83AC3200DE7A63 /* Info.plist */,
 				C724EE372B83DC4500DE7A63 /* AddItemView.swift */,
@@ -388,6 +391,7 @@
 				C724EDFE2B83AC3000DE7A63 /* SimplistApp.swift in Sources */,
 				C7F756202B93029C00E3FA91 /* SharedAppContainer.swift in Sources */,
 				C724EE382B83DC4500DE7A63 /* AddItemView.swift in Sources */,
+				E341F7952D910C5800CE8520 /* ListViewModel.swift in Sources */,
 				C78F9DB12B883002008655E6 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

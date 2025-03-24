@@ -1,100 +1,68 @@
 import SwiftUI
 import SwiftData
-import WidgetKit
 
 struct ListView: View {
-    @Environment(\.modelContext) private var modelContext
+    @State private var viewModel: ListViewModel
     
-    @State private var isShowingAddItemView: Bool = false
-    
-    @Query(sort: \Item.ordinal)
-    var items: [Item]
-    
-    var notCompletedItems: [Item] {
-        items.filter { !$0.completed }
+    init(modelContext: ModelContext) {
+        _viewModel = State(initialValue: ListViewModel(modelContext: modelContext))
     }
     
-    var completedItems: [Item] {
-        items.filter { $0.completed }
-    }
-
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
+                // Active Items Section
                 Section {
-                    ForEach(notCompletedItems) { item in
+                    ForEach(viewModel.notCompletedItems) { item in
                         ListRowView(item: item)
+                            .onTapGesture {
+                                viewModel.toggleCompletion(for: item)
+                            }
                     }
-                    .onMove(perform: moveItem)
-                    .onDelete(perform: deleteItems)
+                    .onMove { source, destination in
+                        viewModel.moveItems(source, destination)
+                    }
+                    .onDelete { indexSet in
+                        viewModel.deleteItems(indexSet, from: .active)
+                    }
                 }
                 
-                if !completedItems.isEmpty {
-                    Section {
-                        ForEach(completedItems) { item in
+                // Completed Items Section
+                if !viewModel.completedItems.isEmpty {
+                    Section("Completed") {
+                        ForEach(viewModel.completedItems) { item in
                             ListRowView(item: item)
+                                .onTapGesture {
+                                    viewModel.toggleCompletion(for: item)
+                                }
                         }
-                        .onMove(perform: moveItem)
-                        .onDelete(perform: deleteItems)
-                        Button("Delete all completed", role: .destructive) {
-                            deleteAllCompleted()
+                        .onDelete { indexSet in
+                            viewModel.deleteItems(indexSet, from: .completed)
                         }
                     }
                 }
             }
-            .sheet(isPresented: $isShowingAddItemView) {
-                AddItemView(isShowingAddItemView: $isShowingAddItemView)
-                    .presentationDetents([.fraction(0.15)])
-            }
+            .navigationTitle("Simplist")
             .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: { viewModel.showAddItem() }) {
+                        Image(systemName: "plus")
                     }
+                }
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    EditButton()
                 }
             }
         }
-    }
-
-    private func addItem() { 
-        isShowingAddItemView.toggle()
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+        .sheet(isPresented: .init(
+            get: { viewModel.isShowingAddItemView },
+            set: { if !$0 { viewModel.hideAddItem() }}
+        )) {
+            AddItemView(isShowingAddItemView: .init(
+                get: { viewModel.isShowingAddItemView },
+                set: { if !$0 { viewModel.hideAddItem() }}
+            ))
         }
-        
-        WidgetCenter.shared.reloadAllTimelines()
     }
-    
-    private func deleteAllCompleted() {
-        let completedItems = self.completedItems
-        
-        for completedItem in completedItems {
-            modelContext.delete(completedItem)
-        }
-        
-        WidgetCenter.shared.reloadAllTimelines()
-    }
-    
-    private func moveItem(from source: IndexSet, to destination: Int) {
-        var itemsMovable = notCompletedItems
-        itemsMovable.move(fromOffsets: source, toOffset: destination)
-        
-        for (index, itemCopy) in itemsMovable.enumerated() {
-            if let item = items.first(where: { $0 == itemCopy }) {
-                item.ordinal = index
-            }
-        }
-        
-        WidgetCenter.shared.reloadAllTimelines()
-    }
-}
-
-#Preview {
-    ListView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

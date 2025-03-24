@@ -5,7 +5,7 @@ import SwiftData
 struct SimplistApp: App {
     var body: some Scene {
         WindowGroup {
-            ListView()
+            ListView(modelContext: SharedAppContainer.shared.container.mainContext)
         }
         .modelContainer(SharedAppContainer.shared.container)
     }
