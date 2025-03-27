@@ -12,7 +12,6 @@
 		C724EE022B83AC3000DE7A63 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE012B83AC3000DE7A63 /* Item.swift */; };
 		C724EE042B83AC3200DE7A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C724EE032B83AC3200DE7A63 /* Assets.xcassets */; };
 		C724EE072B83AC3200DE7A63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C724EE062B83AC3200DE7A63 /* Preview Assets.xcassets */; };
-		C724EE1D2B83AC3200DE7A63 /* SimplistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */; };
 		C724EE1F2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */; };
 		C724EE382B83DC4500DE7A63 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C724EE372B83DC4500DE7A63 /* AddItemView.swift */; };
 		C78F9DB12B883002008655E6 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F9DB02B883002008655E6 /* ListRowView.swift */; };
@@ -29,6 +28,7 @@
 		C7F7562D2B93114600E3FA91 /* SimplistShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7562B2B93114600E3FA91 /* SimplistShared.swift */; };
 		E341F78C2D90ABC900CE8520 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = E341F78B2D90ABC900CE8520 /* ReadMe.md */; };
 		E341F7932D91068900CE8520 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341F7912D91061E00CE8520 /* ItemTests.swift */; };
+		E341F7972D94F22300CE8520 /* ListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341F7962D94F22300CE8520 /* ListViewUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 		C724EE092B83AC3200DE7A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C724EE0E2B83AC3200DE7A63 /* SimplistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C724EE182B83AC3200DE7A63 /* SimplistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITests.swift; sourceTree = "<group>"; };
 		C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C724EE372B83DC4500DE7A63 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		C78F9DB02B883002008655E6 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		C7F7562B2B93114600E3FA91 /* SimplistShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplistShared.swift; sourceTree = "<group>"; };
 		E341F78B2D90ABC900CE8520 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		E341F7912D91061E00CE8520 /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		E341F7962D94F22300CE8520 /* ListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +194,8 @@
 		C724EE1B2B83AC3200DE7A63 /* SimplistUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C724EE1C2B83AC3200DE7A63 /* SimplistUITests.swift */,
 				C724EE1E2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift */,
+				E341F7962D94F22300CE8520 /* ListViewUITests.swift */,
 			);
 			path = SimplistUITests;
 			sourceTree = "<group>";
@@ -404,8 +404,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E341F7972D94F22300CE8520 /* ListViewUITests.swift in Sources */,
 				C724EE1F2B83AC3200DE7A63 /* SimplistUITestsLaunchTests.swift in Sources */,
-				C724EE1D2B83AC3200DE7A63 /* SimplistUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
